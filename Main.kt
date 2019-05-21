@@ -111,7 +111,7 @@ fun evalExpr(s: String): Int { // value, index
         j = 0
 
         while (j < funs[name]!!.length) {
-            if (funs[name]!![j].isLowerCase()) {
+            if (funs[name]!![j].isLetter()) {
                 prev = j
                 while (funs[name]!![j].isLetter()) {
                     ++j
